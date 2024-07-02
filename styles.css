@@ -1,119 +1,74 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f7f9fc;
-    color: #333;
 }
 
 header {
-    background-color: #00A8E8;
+    background-color: #2e8b57;
     color: white;
     padding: 1em 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 nav ul li {
-    margin-right: 1em;
+    margin: 0 1em;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5em;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-nav ul li a:hover {
-    background-color: #007EA7;
-    transform: scale(1.1);
 }
 
 section {
     padding: 2em;
     text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s, transform 1s;
-}
-
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 #accueil {
-    background: url('images/image.png') no-repeat center center fixed;
-    background-size: cover;
+    background: url('images/cleaning_background.png') no-repeat center center/cover;
     color: white;
     padding: 4em 2em;
 }
 
-#accueil button {
-    background-color: #FFCA28;
-    color: #333;
-    border: none;
-    padding: 1em 2em;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-#accueil button:hover {
-    background-color: #F9A825;
-    transform: scale(1.1);
-}
-
-.service {
-    margin-bottom: 2em;
+#services .service {
+    background: white;
     padding: 1em;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 1em 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-.service img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    border-radius: 8px;
-    transition: transform 0.3s;
+#services .service h3 {
+    color: #2e8b57;
 }
 
-.service img:hover {
-    transform: scale(1.05);
+#services .service img {
+    max-width: 100%;
+    border-radius: 5px;
+    display: none;
 }
 
 .slogan {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #FFCA28;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
+    font-style: italic;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 form label {
@@ -122,43 +77,29 @@ form label {
 
 form input, form textarea {
     width: 100%;
-    max-width: 500px;
     padding: 0.5em;
     margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form button {
     margin-top: 1em;
     padding: 0.5em 2em;
-    background-color: #00A8E8;
-    color: white;
     border: none;
+    background-color: #2e8b57;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
 }
 
 form button:hover {
-    background-color: #007EA7;
-    transform: scale(1.1);
+    background-color: #1e5b37;
 }
 
-@media (min-width: 768px) {
-    nav ul li {
-        margin-right: 2em;
-    }
-
-    .service {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .service img {
-        max-width: 300px;
-        margin-right: 1em;
-    }
-
-    form input, form textarea {
-        width: 50%;
-    }
+footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
 }
