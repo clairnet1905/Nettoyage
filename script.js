@@ -1,28 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
-    const options = {
-        threshold: 0.1
-    };
+document.addEventListener('DOMContentLoaded', function() {
+    const slideshows = document.querySelectorAll('.slideshow');
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, options);
+    slideshows.forEach(slideshow => {
+        let images = slideshow.querySelectorAll('img');
+        let currentIndex = 0;
 
-    sections.forEach(section => {
-        observer.observe(section);
-    });
+        images[currentIndex].style.display = 'block';
 
-    document.querySelectorAll('nav ul li a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
+        setInterval(() => {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.display = 'block';
+        }, 3000);
     });
 });
