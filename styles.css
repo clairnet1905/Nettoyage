@@ -1,3 +1,4 @@
+/* Général */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -41,6 +42,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* Sections */
 section {
     padding: 2em;
     text-align: center;
@@ -75,6 +77,7 @@ section.visible {
     transform: scale(1.1);
 }
 
+/* Services */
 .service {
     margin-bottom: 2em;
     padding: 1em;
@@ -97,6 +100,7 @@ section.visible {
     color: #ffc107;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -104,6 +108,7 @@ footer {
     padding: 1em 0;
 }
 
+/* Formulaire de contact */
 form {
     display: flex;
     flex-direction: column;
@@ -136,6 +141,7 @@ form button:hover {
     transform: scale(1.1);
 }
 
+/* Media queries */
 @media (min-width: 768px) {
     nav ul li {
         margin-right: 2em;
