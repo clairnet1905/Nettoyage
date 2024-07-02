@@ -21,10 +21,11 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 1em;
 }
 
@@ -32,16 +33,38 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 0.5em;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 nav ul li a:hover {
     background-color: #104e8b;
+    transform: scale(1.1);
 }
 
 section {
     padding: 2em;
     text-align: center;
+}
+
+#accueil {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+#accueil button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#accueil button:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
 }
 
 .service {
@@ -63,7 +86,7 @@ section {
 .slogan {
     font-size: 1.2em;
     font-weight: bold;
-    color: #1e90ff;
+    color: #ffcc00;
 }
 
 footer {
@@ -74,6 +97,38 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #104e8b;
+    transform: scale(1.1);
 }
 
 @media (min-width: 768px) {
