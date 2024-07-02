@@ -44,6 +44,14 @@ nav ul li a:hover {
 section {
     padding: 2em;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #accueil {
@@ -94,9 +102,6 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 form {
