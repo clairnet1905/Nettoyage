@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const options = {
         threshold: 0.1
@@ -16,26 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
     sections.forEach(section => {
         observer.observe(section);
     });
-});
 
-const navLinks = document.querySelectorAll('nav ul li a');
-navLinks.forEach(link => {
-    link.addEventListener('mouseover', () => {
-        link.style.backgroundColor = '#1565C0';
-        link.style.transform = 'scale(1.1)';
-    });
-    link.addEventListener('mouseout', () => {
-        link.style.backgroundColor = '';
-        link.style.transform = '';
-    });
-});
-
-const serviceImages = document.querySelectorAll('.service img');
-serviceImages.forEach(img => {
-    img.addEventListener('mouseover', () => {
-        img.style.transform = 'scale(1.05)';
-    });
-    img.addEventListener('mouseout', () => {
-        img.style.transform = '';
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 });
