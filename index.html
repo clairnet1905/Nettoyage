@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C'+Clair et Net ! - Entreprise de Nettoyage à Bordeaux</title>
-    <meta name="description" content="C'+Clair et Net ! est votre entreprise de nettoyage à Bordeaux spécialisée dans le nettoyage de bureaux, vitres, remise en état et copropriété. Devis gratuit et services professionnels.">
-    <meta name="keywords" content="Entreprise de nettoyage Bordeaux, Société de nettoyage Bordeaux, Nettoyage de bureaux, Nettoyage de vitres, Remise en état, Nettoyage de copropriété, Nettoyage Bordeaux">
+    <title>C'+Clair et Net ! - Nettoyage à Bordeaux</title>
+    <meta name="description" content="C'+Clair et Net ! - Entreprise de nettoyage à Bordeaux. Spécialisé dans le nettoyage de bureaux, vitres, copropriétés et remise en état.">
+    <meta name="keywords" content="Entreprise de nettoyage Bordeaux, Société de nettoyage Bordeaux, Nettoyage de bureaux, Nettoyage de vitres, Remise en état, Nettoyage de copropriété, Nettoyage Bordeaux, Nettoyage de résidence, Nettoyage d’immeuble, Nettoyage de commerces, Nettoyage professionnel Bordeaux">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
         <p>Découvrez nos services de nettoyage pour bureaux, vitres, copropriétés et la remise en état. Nous vous offrons un service de qualité pour tous vos besoins de propreté.</p>
         <p class="slogan">Notre récompense? Votre Satisfaction!</p>
         <p class="slogan">Un seul appel nettoie tout</p>
-        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Devis Gratuit</button>
+        <button onclick="window.location.href='#contact'">Devis Gratuit</button>
     </section>
 
     <section id="services">
@@ -34,34 +35,34 @@
         <div class="service">
             <h3>Nettoyage de Bureaux</h3>
             <img src="images/nettoyage-bureaux.jpg" alt="Nettoyage de bureaux à Bordeaux">
-            <p>Nous offrons un service complet de nettoyage de bureaux à Bordeaux pour garantir un environnement de travail propre et sain. Nos prestations comprennent le dépoussiérage, l'aspiration, le nettoyage des surfaces, et plus encore.</p>
+            <p>Nous assurons un nettoyage complet et professionnel de vos bureaux, garantissant un environnement propre et sain pour vos employés et clients.</p>
         </div>
         <div class="service">
             <h3>Nettoyage de Vitres</h3>
             <img src="images/nettoyage-vitres.jpg" alt="Nettoyage de vitres à Bordeaux">
-            <p>Notre équipe est spécialisée dans le nettoyage de vitres pour une visibilité impeccable. Nous intervenons sur tous types de bâtiments, du résidentiel au commercial, avec des équipements adaptés pour un résultat parfait.</p>
+            <p>Nos experts en nettoyage de vitres vous offrent une visibilité parfaite et un éclat impeccable, que ce soit pour vos locaux commerciaux ou résidentiels.</p>
         </div>
         <div class="service">
             <h3>Remise en État</h3>
             <img src="images/remise-en-etat.jpg" alt="Remise en état après travaux à Bordeaux">
-            <p>Que ce soit après des travaux ou un déménagement, nous assurons une remise en état complète de vos locaux. Nos services incluent le nettoyage en profondeur de toutes les surfaces pour que votre espace soit prêt à l'utilisation.</p>
+            <p>Nous intervenons pour la remise en état de vos locaux après des travaux ou un déménagement, vous assurant un espace propre et prêt à l'emploi.</p>
         </div>
         <div class="service">
             <h3>Nettoyage de Copropriété</h3>
             <img src="images/nettoyage-copropriete.jpg" alt="Nettoyage de copropriétés à Bordeaux">
-            <p>Nous sommes spécialisés dans le nettoyage de copropriétés, assurant la propreté des parties communes, des halls d'entrée aux escaliers. Nous nous engageons à maintenir un environnement accueillant et propre pour tous les résidents.</p>
+            <p>Spécialisés dans l'entretien des parties communes, nous garantissons la propreté et le bien-être des résidents de votre immeuble.</p>
         </div>
     </section>
 
     <section id="a-propos">
-        <h2>À Propos de Nous</h2>
-        <p>C'+Clair et Net ! est une entreprise de nettoyage basée à Bordeaux, dédiée à fournir des services de nettoyage de haute qualité. Nous croyons en l'importance de la propreté pour le bien-être et le confort de nos clients. Nos équipes sont formées et équipées pour répondre à tous vos besoins de nettoyage, que ce soit pour des bureaux, des vitres, des remises en état ou des copropriétés.</p>
-        <p>Nous sommes fiers de notre engagement envers l'excellence et la satisfaction de nos clients. Faites confiance à C'+Clair et Net ! pour des services de nettoyage professionnels et fiables.</p>
+        <h2>À propos de nous</h2>
+        <p>C'+Clair et Net ! est une entreprise de nettoyage basée à Bordeaux, dédiée à fournir des services de qualité pour maintenir la propreté de vos espaces professionnels et résidentiels. Nous utilisons des techniques de pointe et des produits respectueux de l'environnement pour garantir des résultats impeccables. Notre équipe est composée de professionnels qualifiés et expérimentés, prêts à répondre à tous vos besoins de nettoyage.</p>
+        <p>Nous sommes spécialisés dans le nettoyage de bureaux, le nettoyage de vitres, la remise en état après travaux ou déménagement, et l'entretien des copropriétés. Notre engagement est de vous offrir un service personnalisé et efficace, adapté à vos exigences spécifiques.</p>
     </section>
 
     <section id="contact">
-        <h2>Contactez-Nous</h2>
-        <form action="submit_form.php" method="post">
+        <h2>Contactez-nous</h2>
+        <form>
             <label for="name">Nom:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -69,15 +70,13 @@
             <label for="phone">Numéro de téléphone:</label>
             <input type="tel" id="phone" name="phone" required>
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 C'+Clair et Net ! - Entreprise de Nettoyage à Bordeaux</p>
+        <p>&copy; 2024 C'+Clair et Net ! - Tous droits réservés.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
