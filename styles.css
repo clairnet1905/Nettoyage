@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #1e90ff;
+    background-color: #28a745;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #104e8b;
+    background-color: #218838;
     transform: scale(1.1);
 }
 
@@ -61,7 +61,7 @@ section.visible {
 }
 
 #accueil button {
-    background-color: #ffcc00;
+    background-color: #ffc107;
     color: #333;
     border: none;
     padding: 1em 2em;
@@ -71,7 +71,7 @@ section.visible {
 }
 
 #accueil button:hover {
-    background-color: #ff9900;
+    background-color: #e0a800;
     transform: scale(1.1);
 }
 
@@ -94,7 +94,7 @@ section.visible {
 .slogan {
     font-size: 1.2em;
     font-weight: bold;
-    color: #ffcc00;
+    color: #ffc107;
 }
 
 footer {
@@ -124,7 +124,7 @@ form input, form textarea {
 form button {
     margin-top: 1em;
     padding: 0.5em 2em;
-    background-color: #1e90ff;
+    background-color: #28a745;
     color: white;
     border: none;
     cursor: pointer;
@@ -132,7 +132,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #104e8b;
+    background-color: #218838;
     transform: scale(1.1);
 }
 
