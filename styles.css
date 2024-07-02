@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #1E88E5;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #0056b3;
+    background-color: #1565C0;
     transform: scale(1.1);
 }
 
@@ -58,10 +58,11 @@ section.visible {
     background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
+    padding: 4em 2em;
 }
 
 #accueil button {
-    background-color: #ffc107;
+    background-color: #FFCA28;
     color: #333;
     border: none;
     padding: 1em 2em;
@@ -71,7 +72,7 @@ section.visible {
 }
 
 #accueil button:hover {
-    background-color: #e0a800;
+    background-color: #F9A825;
     transform: scale(1.1);
 }
 
@@ -89,12 +90,17 @@ section.visible {
     height: auto;
     max-width: 600px;
     border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.service img:hover {
+    transform: scale(1.05);
 }
 
 .slogan {
     font-size: 1.2em;
     font-weight: bold;
-    color: #ffc107;
+    color: #FFCA28;
 }
 
 footer {
@@ -124,7 +130,7 @@ form input, form textarea {
 form button {
     margin-top: 1em;
     padding: 0.5em 2em;
-    background-color: #007bff;
+    background-color: #1E88E5;
     color: white;
     border: none;
     cursor: pointer;
@@ -132,7 +138,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #1565C0;
     transform: scale(1.1);
 }
 
@@ -143,11 +149,16 @@ form button:hover {
 
     .service {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        text-align: left;
     }
 
     .service img {
+        max-width: 300px;
         margin-right: 1em;
+    }
+
+    form input, form textarea {
+        width: 50%;
     }
 }
