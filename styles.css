@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f7f9fc;
     color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #1e90ff;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -31,10 +31,12 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 0.5em;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #104e8b;
 }
 
 section {
@@ -44,6 +46,11 @@ section {
 
 .service {
     margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .service img {
@@ -56,7 +63,7 @@ section {
 .slogan {
     font-size: 1.2em;
     font-weight: bold;
-    color: #4CAF50;
+    color: #1e90ff;
 }
 
 footer {
@@ -72,5 +79,15 @@ footer {
 @media (min-width: 768px) {
     nav ul li {
         margin-right: 2em;
+    }
+
+    .service {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .service img {
+        margin-right: 1em;
     }
 }
