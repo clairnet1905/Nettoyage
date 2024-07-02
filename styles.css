@@ -1,203 +1,76 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    background: #3498db;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0 0 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    display: inline;
+    margin-right: 1em;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff6f61;
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 
-.hero {
-    background: url('images/hero_cleaning.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+section {
+    padding: 2em;
     text-align: center;
-    padding: 2rem;
-    position: relative;
-}
-
-.hero-content {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
-    border-radius: 10px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.hero-content.active {
-    opacity: 1;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
-
-.hero .slogan {
-    font-size: 1.5rem;
-    font-style: italic;
-    margin: 0.5rem 0;
-}
-
-.hero .btn {
-    background-color: #ff6f61;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-.hero .btn:hover {
-    background-color: #e55b50;
-}
-
-#services {
-    padding: 2rem 0;
-    text-align: center;
-    background-color: #ecf0f1;
-}
-
-#services h2 {
-    margin-bottom: 2rem;
-    color: #2980b9;
 }
 
 .service {
-    margin: 2rem 0;
-    background: #fff;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.service:hover {
-    transform: translateY(-10px);
-}
-
-.service h3 {
-    color: #2980b9;
+    margin-bottom: 2em;
 }
 
 .service img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-top: 1rem;
-}
-
-#about {
-    padding: 2rem 0;
-    text-align: center;
-    background: #f4f4f4;
-}
-
-#about h2 {
-    color: #2980b9;
-}
-
-#contact {
-    padding: 2rem 0;
-    text-align: center;
-}
-
-#contact h2 {
-    color: #2980b9;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact label {
-    display: block;
-    margin: 1rem 0 0.5rem;
-}
-
-#contact input, #contact textarea {
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    transition: border 0.3s;
+    height: auto;
+    max-width: 600px;
+    border-radius: 8px;
 }
 
-#contact input:focus, #contact textarea:focus {
-    border: 1px solid #2980b9;
-}
-
-#contact button {
-    padding: 0.5rem 2rem;
-    background-color: #2980b9;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#contact button:hover {
-    background-color: #1A252F;
+.slogan {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4CAF50;
 }
 
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 1rem 0;
-    background-color: #2980b9;
-    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        margin-right: 2em;
+    }
 }
